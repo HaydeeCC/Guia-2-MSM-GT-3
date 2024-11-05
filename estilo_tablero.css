@@ -1,0 +1,58 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue; /* Fondo azul */
+    color: #EEE; /* Texto blanco */
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#tablero {
+    background-color: white; 
+    height: 400px; 
+    width: 400px; 
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.filaImpar p, .filaPar p {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#tablero .filaImpar p:nth-child(2n+1) {
+    background-color: white;
+}
+
+#tablero .filaPar p:nth-child(2n) {
+    background-color: white;
+}
+
+#tablero .filaImpar p:nth-child(2n) {
+    background-color: #8B4513; 
+}
+
+#tablero .filaPar p:nth-child(2n+1) {
+    background-color: #8B4513; 
+}
+
+
+#tablero p {
+    font-size: 30px;
+}
+
